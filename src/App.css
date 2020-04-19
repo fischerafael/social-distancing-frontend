@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 15px 'Open Sans', sans-serif;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+input, button, textarea, select {
+    font: 400 20px 'Open Sans', sans-serif; 
+}
+
+button {
+    cursor: pointer;
+}
+
+form input {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 25px;
+    margin: 5px 0;
+}
+
+form select {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 25px;
+    margin: 5px 0;
+    color: #333;
+}
+
+form textarea {
+    width: 100%;
+    min-height: 60px;
+    resize: vertical;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px 25px;
+    margin: 5px 0;
+    color: #333;
+}
+
+.button {
+    width: 100%;
+    height: 45px;
+    background: #9032F1;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;    
+    display: inline-block;
+    text-align: center;    
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 45px;
+    transition: filter 0.5s;
+}
+
+.button:hover {
+    filter: brightness(75%);
+}
+
+
+.marcador-saudavel {
+    background: #333;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: none;
+    box-sizing: border-box;
+}
+
+.marcador-suspeito {
+    background: rgb(183, 144, 221);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: none;
+    box-sizing: border-box;
+}
+
+.marcador-confirmado {
+    background: #9032F1;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: none;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 10vh;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    z-index: 1;
+}
+
+.logo {
+    max-width: 50px;
+}
+
+.exit-button {
+    width: 100px;
+    margin-left: auto;
+}
+
+/* Hero Component */
+
+.container {
+    padding: 0 50px;
+    height: 90vh;     
+}
+
+.container-content {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr;       
+    align-items: center;
+    padding-top: 10vh;
+    max-width: 1000px;
+    margin: auto;
+    height: 90vh;
+}
+
+.hero-img {
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    max-width: 300px;
+}
+
+.content-text {        
+    max-width: 400px;    
+    margin-right: 50px;    
+}
+
+/* Home */
+
+h1 {
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 25px;        
+}
+
+h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.content-buttons {    
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    margin-top: 30px;
+}
+
+.content-form {
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 600px;
+    border-radius: 15px;        
+}
+
+.current-position {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    margin-bottom: 15px;
+}
+
+.popup {
+    padding: 25px;
+    border-radius: 50px; 
+    background: rgba(255, 255, 255, 0.8);   
+}
+
+.total-cases {
+    max-width: 300px;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: auto;
+    line-height: 20px;
+}
