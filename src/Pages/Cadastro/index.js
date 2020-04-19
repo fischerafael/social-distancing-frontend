@@ -10,8 +10,8 @@ export default function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [status, setStatus] = useState('saudável');
-    const [symp, setSymp] = useState('Nenhum');
-    const [places, setPlaces] = useState('Nenhum');
+    const [symp, setSymp] = useState('');
+    const [places, setPlaces] = useState('');
     const [latitude, setLatitude] = useState('');
     const [longitude, setLongitude] = useState('');
 
@@ -105,7 +105,7 @@ export default function Login() {
                                     type="number"                                
                                     placeholder="Latitude"
                                     required
-                                    value={latitude}
+                                    value={latitude + 0.003}
                                     onChange={e => setLatitude(e.target.value)}
                                 />
                                 <input 
@@ -113,7 +113,7 @@ export default function Login() {
                                     type="number"                                  
                                     placeholder="Longitude"
                                     required
-                                    value={longitude}
+                                    value={longitude - 0.003}
                                     onChange={e => setLongitude(e.target.value)}                                    
                                 />
                             </div>  
@@ -123,7 +123,7 @@ export default function Login() {
                                 defaultValue=""
                                 value={symp}
                                 onChange={e => setSymp(e.target.value)} 
-                                required                               
+                                                               
                             />
                             <textarea 
                                 className="input"
@@ -131,7 +131,7 @@ export default function Login() {
                                 defaultValue=""
                                 value={places}
                                 onChange={e => setPlaces(e.target.value)}
-                                required
+                                
                             />                                                    
                             <div className="content-buttons">                            
                                 <Link className="button" type="submit" onClick={handleAddUser}>Cadastrar-se</Link>
