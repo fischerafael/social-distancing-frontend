@@ -210,3 +210,10 @@ p {
     margin-top: auto;
     line-height: 20px;
 }
+
+@media (max-width: 600px) 
+{
+    .container-content {
+        grid-template-columns: 1fr;
+    }        
+}
