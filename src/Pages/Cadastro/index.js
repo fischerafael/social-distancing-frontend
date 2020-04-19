@@ -76,7 +76,7 @@ export default function Login() {
                             <input 
                                 className="input"
                                 type="email"
-                                placeholder="Digite seu ID"
+                                placeholder="Digite um email"
                                 required
                                 value={email}
                                 onChange={e => setEmail(e.target.value)}
@@ -84,7 +84,7 @@ export default function Login() {
                             <input 
                                 className="input"
                                 type="password"
-                                placeholder="Digite sua senha"
+                                placeholder="Defina uma senha"
                                 required
                                 value={password}
                                 onChange={e => setPassword(e.target.value)}

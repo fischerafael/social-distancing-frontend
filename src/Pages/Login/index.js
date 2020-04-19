@@ -40,7 +40,7 @@ export default function Login() {
                             <input 
                                 className="input"
                                 type="email"
-                                placeholder="Digite seu ID"
+                                placeholder="Digite email de login"
                                 value={email}
                                 onChange={e => setEmail(e.target.value)}
                                 required
