@@ -3,16 +3,14 @@ import Map, { Marker, Popup } from 'react-map-gl';
 import api from '../../services/api';
 import Header from '../../Components/HeaderSystem'
 
-require('dotenv').config();
-
-const MAPBOX_TOKEN = process.env.MAPBOX_API; 
+const MAPBOX_TOKEN = "pk.eyJ1IjoiZGVzaWduZmlzY2hlciIsImEiOiJjazhuZWk4Z28wdDc1M21wczExbzRkaGZkIn0.JrFY7DZmu_I2AdAd2OqNXw"; 
 
 export default function Mapa() {  
 
     const [viewport, setViewport] = useState({
         latitude: 0,
         longitude: 0,
-        zoom: 10,
+        zoom: 8,
         bearing: 0,
         pitch: 0
     });  
@@ -33,7 +31,7 @@ export default function Mapa() {
               setViewport({
                 latitude,
                 longitude,
-                zoom: 15,
+                zoom: 11,
               })
             },
             (err) => {
