@@ -105,7 +105,7 @@ export default function Login() {
                                     type="number"                                
                                     placeholder="Latitude"
                                     required
-                                    value={latitude + 0.003}
+                                    value={latitude}
                                     onChange={e => setLatitude(e.target.value)}
                                 />
                                 <input 
@@ -113,7 +113,7 @@ export default function Login() {
                                     type="number"                                  
                                     placeholder="Longitude"
                                     required
-                                    value={longitude - 0.003}
+                                    value={longitude}
                                     onChange={e => setLongitude(e.target.value)}                                    
                                 />
                             </div>  

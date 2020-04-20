@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Map, { Marker, Popup } from 'react-map-gl';
 import api from '../../services/api';
-
 import Header from '../../Components/HeaderSystem'
 
-const MAPBOX_TOKEN = 'pk.eyJ1IjoiZGVzaWduZmlzY2hlciIsImEiOiJjazhuZWk4Z28wdDc1M21wczExbzRkaGZkIn0.JrFY7DZmu_I2AdAd2OqNXw'; 
+require('dotenv').config();
+
+const MAPBOX_TOKEN = process.env.MAPBOX_API; 
 
 export default function Mapa() {  
 
